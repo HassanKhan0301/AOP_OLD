@@ -1,0 +1,1805 @@
+{
+  "name": "dga_sub_activities",
+  "title": "Sub-Activities",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "dga_sub_activitieses",
+      "x-ms-dataverse-primary-id": "dga_sub_activitiesid",
+      "x-ms-dataverse-primary-name": "dga_name",
+      "properties": {
+        "createdby": {
+          "type": "string",
+          "title": "Created By",
+          "x-ms-dataverse-attribute": "createdby",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "CreatedBy",
+          "x-ms-read-only": true
+        },
+        "createdbyname": {
+          "type": "string",
+          "title": "createdbyname",
+          "x-ms-dataverse-attribute": "createdbyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "CreatedByName",
+          "x-ms-read-only": true,
+          "maxLength": 100
+        },
+        "createdbyyominame": {
+          "type": "string",
+          "title": "createdbyyominame",
+          "x-ms-dataverse-attribute": "createdbyyominame",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "CreatedByYomiName",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 100
+        },
+        "createdon": {
+          "type": "string",
+          "title": "Created On",
+          "x-ms-dataverse-attribute": "createdon",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "CreatedOn",
+          "x-ms-read-only": true
+        },
+        "createdonbehalfby": {
+          "type": "string",
+          "title": "Created By (Delegate)",
+          "x-ms-dataverse-attribute": "createdonbehalfby",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "CreatedOnBehalfBy",
+          "x-ms-read-only": true
+        },
+        "createdonbehalfbyname": {
+          "type": "string",
+          "title": "createdonbehalfbyname",
+          "x-ms-dataverse-attribute": "createdonbehalfbyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "CreatedOnBehalfByName",
+          "x-ms-read-only": true,
+          "maxLength": 100
+        },
+        "createdonbehalfbyyominame": {
+          "type": "string",
+          "title": "createdonbehalfbyyominame",
+          "x-ms-dataverse-attribute": "createdonbehalfbyyominame",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "CreatedOnBehalfByYomiName",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 100
+        },
+        "dga_allocated_budget": {
+          "type": "string",
+          "title": "Allocated Budget",
+          "x-ms-dataverse-attribute": "dga_allocated_budget",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_allocated_budget"
+        },
+        "dga_allocated_budget_base": {
+          "type": "string",
+          "title": "Allocated Budget (Base)",
+          "x-ms-dataverse-attribute": "dga_allocated_budget_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_allocated_budget_Base",
+          "x-ms-read-only": true
+        },
+        "dga_aopproject": {
+          "type": "string",
+          "title": "AOP Project",
+          "x-ms-dataverse-attribute": "dga_aopproject",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "dga_AOPProject"
+        },
+        "dga_aopprojectname": {
+          "type": "string",
+          "title": "dga_aopprojectname",
+          "x-ms-dataverse-attribute": "dga_aopprojectname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "dga_AOPProjectName",
+          "x-ms-read-only": true,
+          "maxLength": 200
+        },
+        "dga_april_actual": {
+          "type": "string",
+          "title": "April - Actual",
+          "x-ms-dataverse-attribute": "dga_april_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_april_actual"
+        },
+        "dga_april_actual_base": {
+          "type": "string",
+          "title": "April - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_april_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_april_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_april_delivered": {
+          "type": "string",
+          "title": "April - Delivered",
+          "x-ms-dataverse-attribute": "dga_april_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_april_delivered"
+        },
+        "dga_april_delivered_base": {
+          "type": "string",
+          "title": "April - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_april_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_april_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_april_old_actual": {
+          "type": "string",
+          "title": "April - Old Actual",
+          "x-ms-dataverse-attribute": "dga_april_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_april_old_actual"
+        },
+        "dga_april_old_actual_base": {
+          "type": "string",
+          "title": "April - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_april_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_april_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_april_old_delivered": {
+          "type": "string",
+          "title": "April - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_april_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_april_old_delivered"
+        },
+        "dga_april_old_delivered_base": {
+          "type": "string",
+          "title": "April - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_april_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_april_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_april_planned": {
+          "type": "string",
+          "title": "April - Planned",
+          "x-ms-dataverse-attribute": "dga_april_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_april_planned"
+        },
+        "dga_april_planned_base": {
+          "type": "string",
+          "title": "April - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_april_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_april_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_august_actual": {
+          "type": "string",
+          "title": "August - Actual",
+          "x-ms-dataverse-attribute": "dga_august_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_august_actual"
+        },
+        "dga_august_actual_base": {
+          "type": "string",
+          "title": "August - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_august_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_august_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_august_delivered": {
+          "type": "string",
+          "title": "August - Delivered",
+          "x-ms-dataverse-attribute": "dga_august_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_august_delivered"
+        },
+        "dga_august_delivered_base": {
+          "type": "string",
+          "title": "August - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_august_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_august_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_august_old_actual": {
+          "type": "string",
+          "title": "August - Old Actual",
+          "x-ms-dataverse-attribute": "dga_august_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_august_old_actual"
+        },
+        "dga_august_old_actual_base": {
+          "type": "string",
+          "title": "August - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_august_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_august_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_august_old_delivered": {
+          "type": "string",
+          "title": "August - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_august_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_august_old_delivered"
+        },
+        "dga_august_old_delivered_base": {
+          "type": "string",
+          "title": "August - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_august_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_august_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_august_planned": {
+          "type": "string",
+          "title": "August - Planned",
+          "x-ms-dataverse-attribute": "dga_august_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_august_planned"
+        },
+        "dga_august_planned_base": {
+          "type": "string",
+          "title": "August - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_august_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_august_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_budget_review_comments": {
+          "type": "string",
+          "title": "Budget Review Comments",
+          "x-ms-dataverse-attribute": "dga_budget_review_comments",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "dga_budget_review_comments",
+          "maxLength": 2000
+        },
+        "dga_budget_source": {
+          "type": "string",
+          "title": "Budget Source",
+          "x-ms-dataverse-attribute": "dga_budget_source",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "dga_budget_source",
+          "enum": [
+            "Strategic Budget",
+            "Operational Budget"
+          ],
+          "x-ms-enum-values": [
+            1,
+            2
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "ca2ac003-12b0-f111-aaac-000d3ae0324d",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Budget Source",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "dga_budget_sourcename": {
+          "type": "string",
+          "title": "dga_budget_sourcename",
+          "x-ms-dataverse-attribute": "dga_budget_sourcename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_budget_sourceName",
+          "x-ms-read-only": true
+        },
+        "dga_budget_type": {
+          "type": "string",
+          "title": "Budget Type",
+          "x-ms-dataverse-attribute": "dga_budget_type",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "dga_budget_type",
+          "enum": [
+            "Chapter 1 - HR",
+            "Chapter 2 - Opex",
+            "Chapter 3 - Capex"
+          ],
+          "x-ms-enum-values": [
+            776140000,
+            576610001,
+            776140002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "9b302e4e-12b0-f111-aaac-000d3ae0324d",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Budget Type",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "dga_budget_typename": {
+          "type": "string",
+          "title": "dga_budget_typename",
+          "x-ms-dataverse-attribute": "dga_budget_typename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_budget_typeName",
+          "x-ms-read-only": true
+        },
+        "dga_budgetreviewed": {
+          "type": "string",
+          "title": "Budget Reviewed",
+          "x-ms-dataverse-attribute": "dga_budgetreviewed",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_BudgetReviewed",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "109f0d90-11b0-f111-aaac-000d3ae0324d",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Budget Reviewed",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_budgetreviewedname": {
+          "type": "string",
+          "title": "dga_budgetreviewedname",
+          "x-ms-dataverse-attribute": "dga_budgetreviewedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_budgetreviewedName",
+          "x-ms-read-only": true
+        },
+        "dga_december_actual": {
+          "type": "string",
+          "title": "December - Actual",
+          "x-ms-dataverse-attribute": "dga_december_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_december_actual"
+        },
+        "dga_december_actual_base": {
+          "type": "string",
+          "title": "December - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_december_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_december_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_december_delivered": {
+          "type": "string",
+          "title": "December - Delivered",
+          "x-ms-dataverse-attribute": "dga_december_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_december_delivered"
+        },
+        "dga_december_delivered_base": {
+          "type": "string",
+          "title": "December - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_december_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_december_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_december_old_actual": {
+          "type": "string",
+          "title": "December - Old Actual",
+          "x-ms-dataverse-attribute": "dga_december_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_december_old_actual"
+        },
+        "dga_december_old_actual_base": {
+          "type": "string",
+          "title": "December - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_december_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_december_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_december_old_delivered": {
+          "type": "string",
+          "title": "December - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_december_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_december_old_delivered"
+        },
+        "dga_december_old_delivered_base": {
+          "type": "string",
+          "title": "December - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_december_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_december_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_december_planned": {
+          "type": "string",
+          "title": "December - Planned",
+          "x-ms-dataverse-attribute": "dga_december_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_december_planned"
+        },
+        "dga_december_planned_base": {
+          "type": "string",
+          "title": "December - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_december_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_december_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_description": {
+          "type": "string",
+          "title": "Description",
+          "x-ms-dataverse-attribute": "dga_description",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "dga_description",
+          "maxLength": 2000
+        },
+        "dga_dga_is_zero_january": {
+          "type": "string",
+          "title": "Is Zero - January",
+          "x-ms-dataverse-attribute": "dga_dga_is_zero_january",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_dga_is_zero_january",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "cfe84002-14b0-f111-aaac-000d3ae0324d",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - January",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_dga_is_zero_januaryname": {
+          "type": "string",
+          "title": "dga_dga_is_zero_januaryname",
+          "x-ms-dataverse-attribute": "dga_dga_is_zero_januaryname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_dga_is_zero_januaryName",
+          "x-ms-read-only": true
+        },
+        "dga_february_actual": {
+          "type": "string",
+          "title": "February - Actual",
+          "x-ms-dataverse-attribute": "dga_february_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_february_actual"
+        },
+        "dga_february_actual_base": {
+          "type": "string",
+          "title": "February - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_february_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_february_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_february_delivered": {
+          "type": "string",
+          "title": "February - Delivered",
+          "x-ms-dataverse-attribute": "dga_february_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_february_delivered"
+        },
+        "dga_february_delivered_base": {
+          "type": "string",
+          "title": "February - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_february_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_february_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_february_old_actual": {
+          "type": "string",
+          "title": "February - Old Actual",
+          "x-ms-dataverse-attribute": "dga_february_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_february_old_actual"
+        },
+        "dga_february_old_actual_base": {
+          "type": "string",
+          "title": "February - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_february_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_february_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_february_old_delivered": {
+          "type": "string",
+          "title": "February - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_february_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_february_old_delivered"
+        },
+        "dga_february_old_delivered_base": {
+          "type": "string",
+          "title": "February - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_february_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_february_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_february_planned": {
+          "type": "string",
+          "title": "February - Planned",
+          "x-ms-dataverse-attribute": "dga_february_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_february_planned"
+        },
+        "dga_february_planned_base": {
+          "type": "string",
+          "title": "February - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_february_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_february_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_is_zero_april": {
+          "type": "string",
+          "title": "Is Zero - April",
+          "x-ms-dataverse-attribute": "dga_is_zero_april",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_is_zero_april",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "a604157f-13b0-f111-aaac-002248e36793",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - April",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_is_zero_aprilname": {
+          "type": "string",
+          "title": "dga_is_zero_aprilname",
+          "x-ms-dataverse-attribute": "dga_is_zero_aprilname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_is_zero_aprilName",
+          "x-ms-read-only": true
+        },
+        "dga_is_zero_august": {
+          "type": "string",
+          "title": "Is Zero - August",
+          "x-ms-dataverse-attribute": "dga_is_zero_august",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_is_zero_august",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "4547db8d-13b0-f111-aaac-002248e36793",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - August",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_is_zero_augustname": {
+          "type": "string",
+          "title": "dga_is_zero_augustname",
+          "x-ms-dataverse-attribute": "dga_is_zero_augustname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_is_zero_augustName",
+          "x-ms-read-only": true
+        },
+        "dga_is_zero_december": {
+          "type": "string",
+          "title": "Is Zero - December",
+          "x-ms-dataverse-attribute": "dga_is_zero_december",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_is_zero_december",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "e7cdefd3-13b0-f111-aaac-002248e401e3",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - December",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_is_zero_decembername": {
+          "type": "string",
+          "title": "dga_is_zero_decembername",
+          "x-ms-dataverse-attribute": "dga_is_zero_decembername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_is_zero_decemberName",
+          "x-ms-read-only": true
+        },
+        "dga_is_zero_february": {
+          "type": "string",
+          "title": "Is Zero - February",
+          "x-ms-dataverse-attribute": "dga_is_zero_february",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_is_zero_february",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "7c0f39ea-13b0-f111-aaac-000d3ae0324d",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - February",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_is_zero_februaryname": {
+          "type": "string",
+          "title": "dga_is_zero_februaryname",
+          "x-ms-dataverse-attribute": "dga_is_zero_februaryname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_is_zero_februaryName",
+          "x-ms-read-only": true
+        },
+        "dga_is_zero_july": {
+          "type": "string",
+          "title": "Is Zero - July",
+          "x-ms-dataverse-attribute": "dga_is_zero_july",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_is_zero_july",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "643cfb0f-14b0-f111-aaac-002248e36793",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - July",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_is_zero_julyname": {
+          "type": "string",
+          "title": "dga_is_zero_julyname",
+          "x-ms-dataverse-attribute": "dga_is_zero_julyname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_is_zero_julyName",
+          "x-ms-read-only": true
+        },
+        "dga_is_zero_june": {
+          "type": "string",
+          "title": "Is Zero - June",
+          "x-ms-dataverse-attribute": "dga_is_zero_june",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_is_zero_june",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "60a84220-14b0-f111-aaac-002248e401e3",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - June",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_is_zero_junename": {
+          "type": "string",
+          "title": "dga_is_zero_junename",
+          "x-ms-dataverse-attribute": "dga_is_zero_junename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_is_zero_juneName",
+          "x-ms-read-only": true
+        },
+        "dga_is_zero_march": {
+          "type": "string",
+          "title": "Is Zero - March",
+          "x-ms-dataverse-attribute": "dga_is_zero_march",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_is_zero_march",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "72123658-14b0-f111-aaac-000d3ae0324d",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - March",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_is_zero_marchname": {
+          "type": "string",
+          "title": "dga_is_zero_marchname",
+          "x-ms-dataverse-attribute": "dga_is_zero_marchname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_is_zero_marchName",
+          "x-ms-read-only": true
+        },
+        "dga_is_zero_may": {
+          "type": "string",
+          "title": "Is Zero - May",
+          "x-ms-dataverse-attribute": "dga_is_zero_may",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_is_zero_may",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "7f588b6b-14b0-f111-aaac-000d3ae0324d",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - May",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_is_zero_mayname": {
+          "type": "string",
+          "title": "dga_is_zero_mayname",
+          "x-ms-dataverse-attribute": "dga_is_zero_mayname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_is_zero_mayName",
+          "x-ms-read-only": true
+        },
+        "dga_is_zero_november": {
+          "type": "string",
+          "title": "Is Zero - November",
+          "x-ms-dataverse-attribute": "dga_is_zero_november",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_is_zero_november",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "d7923d7b-14b0-f111-aaac-002248e36793",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - November",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_is_zero_novembername": {
+          "type": "string",
+          "title": "dga_is_zero_novembername",
+          "x-ms-dataverse-attribute": "dga_is_zero_novembername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_is_zero_novemberName",
+          "x-ms-read-only": true
+        },
+        "dga_is_zero_october": {
+          "type": "string",
+          "title": "Is Zero - October",
+          "x-ms-dataverse-attribute": "dga_is_zero_october",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_is_zero_october",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "0a915e8a-14b0-f111-aaac-002248e36793",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - October",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_is_zero_octobername": {
+          "type": "string",
+          "title": "dga_is_zero_octobername",
+          "x-ms-dataverse-attribute": "dga_is_zero_octobername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_is_zero_octoberName",
+          "x-ms-read-only": true
+        },
+        "dga_is_zero_september": {
+          "type": "string",
+          "title": "Is Zero - September",
+          "x-ms-dataverse-attribute": "dga_is_zero_september",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "dga_is_zero_september",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "97f3f999-14b0-f111-aaac-002248e401e3",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Is Zero - September",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "dga_is_zero_septembername": {
+          "type": "string",
+          "title": "dga_is_zero_septembername",
+          "x-ms-dataverse-attribute": "dga_is_zero_septembername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "dga_is_zero_septemberName",
+          "x-ms-read-only": true
+        },
+        "dga_january_actual": {
+          "type": "string",
+          "title": "January - Actual",
+          "x-ms-dataverse-attribute": "dga_january_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_january_actual"
+        },
+        "dga_january_actual_base": {
+          "type": "string",
+          "title": "January - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_january_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_january_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_january_delivered": {
+          "type": "string",
+          "title": "January - Delivered",
+          "x-ms-dataverse-attribute": "dga_january_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_january_delivered"
+        },
+        "dga_january_delivered_base": {
+          "type": "string",
+          "title": "January - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_january_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_january_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_january_old_actual": {
+          "type": "string",
+          "title": "January - Old Actual",
+          "x-ms-dataverse-attribute": "dga_january_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_january_old_actual"
+        },
+        "dga_january_old_actual_base": {
+          "type": "string",
+          "title": "January - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_january_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_january_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_january_old_delivered": {
+          "type": "string",
+          "title": "January - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_january_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_january_old_delivered"
+        },
+        "dga_january_old_delivered_base": {
+          "type": "string",
+          "title": "January - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_january_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_january_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_january_planned": {
+          "type": "string",
+          "title": "January - Planned",
+          "x-ms-dataverse-attribute": "dga_january_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_january_planned"
+        },
+        "dga_january_planned_base": {
+          "type": "string",
+          "title": "January - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_january_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_january_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_july_actual": {
+          "type": "string",
+          "title": "July - Actual",
+          "x-ms-dataverse-attribute": "dga_july_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_july_actual"
+        },
+        "dga_july_actual_base": {
+          "type": "string",
+          "title": "July - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_july_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_july_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_july_delivered": {
+          "type": "string",
+          "title": "July - Delivered",
+          "x-ms-dataverse-attribute": "dga_july_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_july_delivered"
+        },
+        "dga_july_delivered_base": {
+          "type": "string",
+          "title": "July - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_july_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_july_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_july_old_actual": {
+          "type": "string",
+          "title": "July - Old Actual",
+          "x-ms-dataverse-attribute": "dga_july_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_july_old_actual"
+        },
+        "dga_july_old_actual_base": {
+          "type": "string",
+          "title": "July - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_july_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_july_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_july_old_delivered": {
+          "type": "string",
+          "title": "July - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_july_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_july_old_delivered"
+        },
+        "dga_july_old_delivered_base": {
+          "type": "string",
+          "title": "July - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_july_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_july_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_july_planned": {
+          "type": "string",
+          "title": "July - Planned",
+          "x-ms-dataverse-attribute": "dga_july_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_july_planned"
+        },
+        "dga_july_planned_base": {
+          "type": "string",
+          "title": "July - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_july_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_july_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_june_actual": {
+          "type": "string",
+          "title": "June - Actual",
+          "x-ms-dataverse-attribute": "dga_june_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_june_actual"
+        },
+        "dga_june_actual_base": {
+          "type": "string",
+          "title": "June - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_june_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_june_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_june_delivered": {
+          "type": "string",
+          "title": "June - Delivered",
+          "x-ms-dataverse-attribute": "dga_june_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_june_delivered"
+        },
+        "dga_june_delivered_base": {
+          "type": "string",
+          "title": "June - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_june_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_june_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_june_old_actual": {
+          "type": "string",
+          "title": "June - Old Actual",
+          "x-ms-dataverse-attribute": "dga_june_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_june_old_actual"
+        },
+        "dga_june_old_actual_base": {
+          "type": "string",
+          "title": "June - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_june_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_june_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_june_old_delivered": {
+          "type": "string",
+          "title": "June - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_june_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_june_old_delivered"
+        },
+        "dga_june_old_delivered_base": {
+          "type": "string",
+          "title": "June - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_june_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_june_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_june_planned": {
+          "type": "string",
+          "title": "June - Planned",
+          "x-ms-dataverse-attribute": "dga_june_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_june_planned"
+        },
+        "dga_june_planned_base": {
+          "type": "string",
+          "title": "June - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_june_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_june_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_justification_for_budget": {
+          "type": "string",
+          "title": "Justification for Budget",
+          "x-ms-dataverse-attribute": "dga_justification_for_budget",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "dga_justification_for_budget",
+          "maxLength": 2000
+        },
+        "dga_march_actual": {
+          "type": "string",
+          "title": "March - Actual",
+          "x-ms-dataverse-attribute": "dga_march_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_march_actual"
+        },
+        "dga_march_actual_base": {
+          "type": "string",
+          "title": "March - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_march_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_march_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_march_delivered": {
+          "type": "string",
+          "title": "March - Delivered",
+          "x-ms-dataverse-attribute": "dga_march_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_march_delivered"
+        },
+        "dga_march_delivered_base": {
+          "type": "string",
+          "title": "March - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_march_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_march_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_march_old_actual": {
+          "type": "string",
+          "title": "March - Old Actual",
+          "x-ms-dataverse-attribute": "dga_march_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_march_old_actual"
+        },
+        "dga_march_old_actual_base": {
+          "type": "string",
+          "title": "March - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_march_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_march_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_march_old_delivered": {
+          "type": "string",
+          "title": "March - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_march_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_march_old_delivered"
+        },
+        "dga_march_old_delivered_base": {
+          "type": "string",
+          "title": "March - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_march_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_march_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_march_planned": {
+          "type": "string",
+          "title": "March - Planned",
+          "x-ms-dataverse-attribute": "dga_march_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_march_planned"
+        },
+        "dga_march_planned_base": {
+          "type": "string",
+          "title": "March - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_march_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_march_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_may_actual": {
+          "type": "string",
+          "title": "May - Actual",
+          "x-ms-dataverse-attribute": "dga_may_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_may_actual"
+        },
+        "dga_may_actual_base": {
+          "type": "string",
+          "title": "May - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_may_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_may_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_may_delivered": {
+          "type": "string",
+          "title": "May - Delivered",
+          "x-ms-dataverse-attribute": "dga_may_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_may_delivered"
+        },
+        "dga_may_delivered_base": {
+          "type": "string",
+          "title": "May - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_may_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_may_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_may_old_actual": {
+          "type": "string",
+          "title": "May - Old Actual",
+          "x-ms-dataverse-attribute": "dga_may_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_may_old_actual"
+        },
+        "dga_may_old_actual_base": {
+          "type": "string",
+          "title": "May - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_may_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_may_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_may_old_delivered": {
+          "type": "string",
+          "title": "May - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_may_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_may_old_delivered"
+        },
+        "dga_may_old_delivered_base": {
+          "type": "string",
+          "title": "May - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_may_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_may_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_may_planned": {
+          "type": "string",
+          "title": "May - Planned",
+          "x-ms-dataverse-attribute": "dga_may_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_may_planned"
+        },
+        "dga_may_planned_base": {
+          "type": "string",
+          "title": "May - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_may_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_may_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_name": {
+          "type": "string",
+          "title": "Name",
+          "x-ms-dataverse-attribute": "dga_name",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "dga_Name",
+          "x-ms-dataverse-primary-name": true,
+          "required": true,
+          "maxLength": 850
+        },
+        "dga_november_actual": {
+          "type": "string",
+          "title": "November - Actual",
+          "x-ms-dataverse-attribute": "dga_november_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_november_actual"
+        },
+        "dga_november_actual_base": {
+          "type": "string",
+          "title": "November - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_november_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_november_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_november_delivered": {
+          "type": "string",
+          "title": "November - Delivered",
+          "x-ms-dataverse-attribute": "dga_november_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_november_delivered"
+        },
+        "dga_november_delivered_base": {
+          "type": "string",
+          "title": "November - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_november_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_november_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_november_old_actual": {
+          "type": "string",
+          "title": "November - Old Actual",
+          "x-ms-dataverse-attribute": "dga_november_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_november_old_actual"
+        },
+        "dga_november_old_actual_base": {
+          "type": "string",
+          "title": "November - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_november_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_november_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_november_old_delivered": {
+          "type": "string",
+          "title": "November - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_november_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_november_old_delivered"
+        },
+        "dga_november_old_delivered_base": {
+          "type": "string",
+          "title": "November - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_november_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_november_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_november_planned": {
+          "type": "string",
+          "title": "November - Planned",
+          "x-ms-dataverse-attribute": "dga_november_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_november_planned"
+        },
+        "dga_november_planned_base": {
+          "type": "string",
+          "title": "November - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_november_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_november_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_october_actual": {
+          "type": "string",
+          "title": "October - Actual",
+          "x-ms-dataverse-attribute": "dga_october_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_october_actual"
+        },
+        "dga_october_actual_base": {
+          "type": "string",
+          "title": "October - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_october_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_october_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_october_delivered": {
+          "type": "string",
+          "title": "October - Delivered",
+          "x-ms-dataverse-attribute": "dga_october_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_october_delivered"
+        },
+        "dga_october_delivered_base": {
+          "type": "string",
+          "title": "October - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_october_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_october_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_october_old_actual": {
+          "type": "string",
+          "title": "October - Old Actual",
+          "x-ms-dataverse-attribute": "dga_october_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_october_old_actual"
+        },
+        "dga_october_old_actual_base": {
+          "type": "string",
+          "title": "October - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_october_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_october_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_october_old_delivered": {
+          "type": "string",
+          "title": "October - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_october_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_october_old_delivered"
+        },
+        "dga_october_old_delivered_base": {
+          "type": "string",
+          "title": "October - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_october_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_october_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_october_planned": {
+          "type": "string",
+          "title": "October - Planned",
+          "x-ms-dataverse-attribute": "dga_october_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_october_planned"
+        },
+        "dga_october_planned_base": {
+          "type": "string",
+          "title": "October - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_october_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_october_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_september_actual": {
+          "type": "string",
+          "title": "September - Actual",
+          "x-ms-dataverse-attribute": "dga_september_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_september_actual"
+        },
+        "dga_september_actual_base": {
+          "type": "string",
+          "title": "September - Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_september_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_september_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_september_delivered": {
+          "type": "string",
+          "title": "September - Delivered",
+          "x-ms-dataverse-attribute": "dga_september_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_september_delivered"
+        },
+        "dga_september_delivered_base": {
+          "type": "string",
+          "title": "September - Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_september_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_september_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_september_old_actual": {
+          "type": "string",
+          "title": "September - Old Actual",
+          "x-ms-dataverse-attribute": "dga_september_old_actual",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_september_old_actual"
+        },
+        "dga_september_old_actual_base": {
+          "type": "string",
+          "title": "September - Old Actual (Base)",
+          "x-ms-dataverse-attribute": "dga_september_old_actual_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_september_old_actual_Base",
+          "x-ms-read-only": true
+        },
+        "dga_september_old_delivered": {
+          "type": "string",
+          "title": "September - Old Delivered",
+          "x-ms-dataverse-attribute": "dga_september_old_delivered",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_september_old_delivered"
+        },
+        "dga_september_old_delivered_base": {
+          "type": "string",
+          "title": "September - Old Delivered (Base)",
+          "x-ms-dataverse-attribute": "dga_september_old_delivered_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_september_old_delivered_Base",
+          "x-ms-read-only": true
+        },
+        "dga_september_planned": {
+          "type": "string",
+          "title": "September - Planned",
+          "x-ms-dataverse-attribute": "dga_september_planned",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_september_planned"
+        },
+        "dga_september_planned_base": {
+          "type": "string",
+          "title": "September - Planned (Base)",
+          "x-ms-dataverse-attribute": "dga_september_planned_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_september_planned_Base",
+          "x-ms-read-only": true
+        },
+        "dga_sub_activitiesid": {
+          "type": "string",
+          "title": "Sub-Activities",
+          "x-ms-dataverse-attribute": "dga_sub_activitiesid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "dga_sub_activitiesId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "dga_total_project_budget": {
+          "type": "string",
+          "title": "Total Project Budget",
+          "x-ms-dataverse-attribute": "dga_total_project_budget",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_total_project_budget"
+        },
+        "dga_total_project_budget_base": {
+          "type": "string",
+          "title": "Total Project Budget (Base)",
+          "x-ms-dataverse-attribute": "dga_total_project_budget_base",
+          "x-ms-dataverse-type": "MoneyType",
+          "x-ms-schema-name": "dga_total_project_budget_Base",
+          "x-ms-read-only": true
+        },
+        "exchangerate": {
+          "type": "string",
+          "title": "Exchange Rate",
+          "x-ms-dataverse-attribute": "exchangerate",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "ExchangeRate",
+          "x-ms-read-only": true
+        },
+        "importsequencenumber": {
+          "type": "string",
+          "title": "Import Sequence Number",
+          "x-ms-dataverse-attribute": "importsequencenumber",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "ImportSequenceNumber"
+        },
+        "modifiedby": {
+          "type": "string",
+          "title": "Modified By",
+          "x-ms-dataverse-attribute": "modifiedby",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "ModifiedBy",
+          "x-ms-read-only": true
+        },
+        "modifiedbyname": {
+          "type": "string",
+          "title": "modifiedbyname",
+          "x-ms-dataverse-attribute": "modifiedbyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "ModifiedByName",
+          "x-ms-read-only": true,
+          "maxLength": 100
+        },
+        "modifiedbyyominame": {
+          "type": "string",
+          "title": "modifiedbyyominame",
+          "x-ms-dataverse-attribute": "modifiedbyyominame",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "ModifiedByYomiName",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 100
+        },
+        "modifiedon": {
+          "type": "string",
+          "title": "Modified On",
+          "x-ms-dataverse-attribute": "modifiedon",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "ModifiedOn",
+          "x-ms-read-only": true
+        },
+        "modifiedonbehalfby": {
+          "type": "string",
+          "title": "Modified By (Delegate)",
+          "x-ms-dataverse-attribute": "modifiedonbehalfby",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "ModifiedOnBehalfBy",
+          "x-ms-read-only": true
+        },
+        "modifiedonbehalfbyname": {
+          "type": "string",
+          "title": "modifiedonbehalfbyname",
+          "x-ms-dataverse-attribute": "modifiedonbehalfbyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "ModifiedOnBehalfByName",
+          "x-ms-read-only": true,
+          "maxLength": 100
+        },
+        "modifiedonbehalfbyyominame": {
+          "type": "string",
+          "title": "modifiedonbehalfbyyominame",
+          "x-ms-dataverse-attribute": "modifiedonbehalfbyyominame",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "ModifiedOnBehalfByYomiName",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 100
+        },
+        "overriddencreatedon": {
+          "type": "string",
+          "title": "Record Created On",
+          "x-ms-dataverse-attribute": "overriddencreatedon",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "OverriddenCreatedOn"
+        },
+        "ownerid": {
+          "type": "string",
+          "title": "Owner",
+          "x-ms-dataverse-attribute": "ownerid",
+          "x-ms-dataverse-type": "OwnerType",
+          "x-ms-schema-name": "OwnerId",
+          "required": true
+        },
+        "owneridname": {
+          "type": "string",
+          "title": "owneridname",
+          "x-ms-dataverse-attribute": "owneridname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "OwnerIdName",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 100
+        },
+        "owneridtype": {
+          "type": "string",
+          "title": "owneridtype",
+          "x-ms-dataverse-attribute": "owneridtype",
+          "x-ms-dataverse-type": "EntityNameType",
+          "x-ms-schema-name": "OwnerIdType",
+          "required": true
+        },
+        "owneridyominame": {
+          "type": "string",
+          "title": "owneridyominame",
+          "x-ms-dataverse-attribute": "owneridyominame",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "OwnerIdYomiName",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 100
+        },
+        "owningbusinessunit": {
+          "type": "string",
+          "title": "Owning Business Unit",
+          "x-ms-dataverse-attribute": "owningbusinessunit",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "OwningBusinessUnit",
+          "x-ms-read-only": true
+        },
+        "owningbusinessunitname": {
+          "type": "string",
+          "title": "owningbusinessunitname",
+          "x-ms-dataverse-attribute": "owningbusinessunitname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "OwningBusinessUnitName",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 100
+        },
+        "owningteam": {
+          "type": "string",
+          "title": "Owning Team",
+          "x-ms-dataverse-attribute": "owningteam",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "OwningTeam",
+          "x-ms-read-only": true
+        },
+        "owninguser": {
+          "type": "string",
+          "title": "Owning User",
+          "x-ms-dataverse-attribute": "owninguser",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "OwningUser",
+          "x-ms-read-only": true
+        },
+        "statecode": {
+          "type": "string",
+          "title": "Status",
+          "x-ms-dataverse-attribute": "statecode",
+          "x-ms-dataverse-type": "StateType",
+          "x-ms-schema-name": "statecode",
+          "required": true,
+          "enum": [
+            "Active",
+            "Inactive"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "da2c4d14-8865-f111-a826-00224814a75b",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Status",
+          "x-ms-optionSetType": "State"
+        },
+        "statecodename": {
+          "type": "string",
+          "title": "statecodename",
+          "x-ms-dataverse-attribute": "statecodename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "statecodeName",
+          "x-ms-read-only": true
+        },
+        "statuscode": {
+          "type": "string",
+          "title": "Status Reason",
+          "x-ms-dataverse-attribute": "statuscode",
+          "x-ms-dataverse-type": "StatusType",
+          "x-ms-schema-name": "statuscode",
+          "enum": [
+            "Active",
+            "Inactive"
+          ],
+          "x-ms-enum-values": [
+            1,
+            2
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "e42c4d14-8865-f111-a826-00224814a75b",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Status Reason",
+          "x-ms-optionSetType": "Status"
+        },
+        "statuscodename": {
+          "type": "string",
+          "title": "statuscodename",
+          "x-ms-dataverse-attribute": "statuscodename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "statuscodeName",
+          "x-ms-read-only": true
+        },
+        "timezoneruleversionnumber": {
+          "type": "string",
+          "title": "Time Zone Rule Version Number",
+          "x-ms-dataverse-attribute": "timezoneruleversionnumber",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "TimeZoneRuleVersionNumber"
+        },
+        "transactioncurrencyid": {
+          "type": "string",
+          "title": "Currency",
+          "x-ms-dataverse-attribute": "transactioncurrencyid",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "TransactionCurrencyId"
+        },
+        "transactioncurrencyidname": {
+          "type": "string",
+          "title": "transactioncurrencyidname",
+          "x-ms-dataverse-attribute": "transactioncurrencyidname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "TransactionCurrencyIdName",
+          "x-ms-read-only": true,
+          "maxLength": 100
+        },
+        "utcconversiontimezonecode": {
+          "type": "string",
+          "title": "UTC Conversion Time Zone Code",
+          "x-ms-dataverse-attribute": "utcconversiontimezonecode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "UTCConversionTimeZoneCode"
+        },
+        "versionnumber": {
+          "type": "string",
+          "title": "Version Number",
+          "x-ms-dataverse-attribute": "versionnumber",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "VersionNumber",
+          "x-ms-read-only": true
+        }
+      },
+      "required": [
+        "createdbyyominame",
+        "createdonbehalfbyyominame",
+        "dga_name",
+        "dga_sub_activitiesid",
+        "modifiedbyyominame",
+        "modifiedonbehalfbyyominame",
+        "ownerid",
+        "owneridname",
+        "owneridtype",
+        "owneridyominame",
+        "owningbusinessunitname",
+        "statecode"
+      ]
+    }
+  }
+}

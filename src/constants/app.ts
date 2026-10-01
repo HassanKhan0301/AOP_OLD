@@ -1,0 +1,136 @@
+import type { LucideIcon } from 'lucide-react'
+import {
+  Activity,
+  BarChart3,
+  BriefcaseBusiness,
+  ClipboardCheck,
+  Edit,
+  Gauge,
+  Landmark,
+  LayoutDashboard,
+  ReceiptText,
+  UsersRound,
+} from 'lucide-react'
+import { getNavigationPath } from '../routes/appRoutes'
+
+export const AOP_ROLES = [
+  'AOP - Division Member',
+  'AOP - Division Director',
+  'AOP - Strategy Team',
+  'AOP - PMO',
+  'AOP - Procurement Team',
+  'AOP - Executive Director',
+  'AOP - Director General',
+  'AOP - ADEO',
+  'AOP - ADEO Team',
+] as const
+
+export type AopRole = (typeof AOP_ROLES)[number]
+
+export const AOP_ROLE_DISPLAY: Record<AopRole, { label: string; description: string }> = {
+  'AOP - Division Member': {
+    label: 'Division Member',
+    description: 'Submit budget items',
+  },
+  'AOP - Division Director': {
+    label: 'Division Director',
+    description: 'Review division submissions',
+  },
+  'AOP - Strategy Team': {
+    label: 'Strategy Team',
+    description: 'Oversee AOP planning',
+  },
+  'AOP - PMO': {
+    label: 'PMO',
+    description: 'Manage portfolio progress',
+  },
+  'AOP - Procurement Team': {
+    label: 'Procurement Team',
+    description: 'Review procurement plans',
+  },
+  'AOP - Executive Director': {
+    label: 'Executive Director',
+    description: 'Approve sector activities',
+  },
+  'AOP - Director General': {
+    label: 'Director General',
+    description: 'Executive approval access',
+  },
+  'AOP - ADEO': {
+    label: 'ADEO',
+    description: 'ADEO approval access',
+  },
+  'AOP - ADEO Team': {
+    label: 'ADEO Team',
+    description: 'Execution approval access',
+  },
+}
+
+export type ThemeMode = 'light' | 'dark'
+
+export const LANGUAGES = [
+  { value: 'en', label: 'English' },
+  { value: 'ar', label: 'العربية' },
+] as const
+
+export type LanguageCode = (typeof LANGUAGES)[number]['value']
+
+export type NavigationItemId =
+  | 'dashboard'
+  | 'createActivity'
+  | 'editActivity'
+  | 'overview'
+  | 'activityLeads'
+  | 'activitiesList'
+  | 'approvals'
+  | 'procurementPlan'
+  | 'engagementPlan'
+  | 'financialSpending'
+  | 'createExecutionPlanActivity'
+  | 'executionPlanActivitiesList'
+  | 'executionPlanFinancialSpending'
+  | 'createKpi'
+  | 'kpis'
+
+export type NavigationItem = {
+  id: NavigationItemId
+  label: string
+  icon: LucideIcon
+  path: string
+}
+
+export const NAVIGATION_ITEMS: NavigationItem[] = [
+  { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, path: getNavigationPath('dashboard') },
+  { id: 'createActivity', label: 'Create Activity', icon: Activity, path: getNavigationPath('createActivity') },
+  { id: 'editActivity', label: 'Edit Activity', icon: Edit, path: getNavigationPath('editActivity') },
+  { id: 'overview', label: 'Sector / Division Overview', icon: Landmark, path: getNavigationPath('overview') },
+  { id: 'activityLeads', label: 'Activity Leads', icon: UsersRound, path: getNavigationPath('activityLeads') },
+  { id: 'activitiesList', label: 'Activities List', icon: ClipboardCheck, path: getNavigationPath('activitiesList') },
+  { id: 'approvals', label: 'Approvals', icon: Gauge, path: getNavigationPath('approvals') },
+  { id: 'procurementPlan', label: 'Procurement Plan', icon: BriefcaseBusiness, path: getNavigationPath('procurementPlan') },
+  { id: 'engagementPlan', label: 'Engagement Plan', icon: BarChart3, path: getNavigationPath('engagementPlan') },
+  { id: 'financialSpending', label: 'Financial Spending', icon: ReceiptText, path: getNavigationPath('financialSpending') },
+  { id: 'createExecutionPlanActivity', label: 'Create Execution Activity', icon: Activity, path: getNavigationPath('createExecutionPlanActivity') },
+  { id: 'executionPlanActivitiesList', label: 'Execution Activities List', icon: ClipboardCheck, path: getNavigationPath('executionPlanActivitiesList') },
+  { id: 'executionPlanFinancialSpending', label: 'Execution Financial Spending', icon: ReceiptText, path: getNavigationPath('executionPlanFinancialSpending') },
+  { id: 'createKpi', label: 'Create KPI', icon: Gauge, path: getNavigationPath('createKpi') },
+  { id: 'kpis', label: 'KPIs', icon: BarChart3, path: getNavigationPath('kpis') },
+]
+
+export type NotificationTone = 'info' | 'warning' | 'success'
+
+export type AppNotification = {
+  id: string
+  title: string
+  description: string
+  time: string
+  tone: NotificationTone
+  unread: boolean
+  roles?: AopRole[]
+  cycleId?: string
+  cycleIds?: string[]
+}
+
+export const MOCK_NOTIFICATIONS: AppNotification[] = [
+  
+]

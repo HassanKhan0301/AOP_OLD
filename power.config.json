@@ -1,0 +1,194 @@
+{
+  "version": "1.0",
+  "appId": "60ab1f5e-d9db-468d-9b66-727419d7ffbc",
+  "appDisplayName": "DGE - AOP",
+  "region": "prod",
+  "environmentId": "8512b3ad-524d-eaa8-a8f0-2a3427a98ccb",
+  "description": " ",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "e638307b-48aa-489b-a038-66e6bcf5772c": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_logicflows",
+      "displayName": "Logic flows",
+      "dataSources": [
+        "powerapps_v2__retrieveaopprojectdatafromexcel"
+      ],
+      "workflowDetails": {
+        "workflowEntityId": "292e778b-fc79-f111-ab0e-002248e401e3",
+        "workflowDisplayName": "PowerApps (V2) – Retrieve AOP Project Data from Excel",
+        "workflowName": "76ff6ba9-c8d2-78fd-f0d6-3924624f4cab"
+      }
+    },
+    "ca0adada-dd2c-40f4-9164-90bcf26b38b7": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_logicflows",
+      "displayName": "Logic flows",
+      "dataSources": [
+        "powerapps_v2__create_updateaopprojectrelatedaisummary"
+      ],
+      "workflowDetails": {
+        "workflowEntityId": "8eb98d27-797b-f111-ab0e-000d3ae0324d",
+        "workflowDisplayName": "Power Apps (V2) - Create/Update AOP Project Related AI Summary",
+        "workflowName": "75a524b3-7809-c62d-2eb1-9bb05b2f4146"
+      }
+    },
+    "510f5d63-441c-4309-9896-8be0a86ef8f8": {
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "displayName": "SharePoint"
+    },
+    "670112c3-2fdc-42c3-a05b-44fcfbbc4f2a": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_logicflows",
+      "displayName": "Logic flows",
+      "dataSources": [
+        "uploadfileinaopproject"
+      ],
+      "workflowDetails": {
+        "workflowEntityId": "11af4796-6f7f-f111-ab0e-000d3ae0324d",
+        "workflowDisplayName": "Upload File in AOP Project",
+        "workflowName": "ad83a02c-1221-4d3f-3ba2-89ebbd23dc7c",
+        "dependencies": {
+          "shared_sharepointonline_1": "510f5d63-441c-4309-9896-8be0a86ef8f8"
+        }
+      }
+    }
+  },
+  "databaseReferences": {
+    "default.cds": {
+      "dataSources": {
+        "users": {
+          "entitySetName": "systemusers",
+          "logicalName": "systemuser"
+        },
+        "aopprojects": {
+          "entitySetName": "dga_aop_projectses",
+          "logicalName": "dga_aop_projects"
+        },
+        "projectplanninginstances": {
+          "entitySetName": "dga_project_planning_instances",
+          "logicalName": "dga_project_planning_instance"
+        },
+        "cycles": {
+          "entitySetName": "dga_assessment_cycles",
+          "logicalName": "dga_assessment_cycle"
+        },
+        "aopprojectlogs": {
+          "entitySetName": "dga_aop_project_logses",
+          "logicalName": "dga_aop_project_logs"
+        },
+        "divisionalhierarchies": {
+          "entitySetName": "dga_divisional_hierarchies",
+          "logicalName": "dga_divisional_hierarchy"
+        },
+        "teams": {
+          "entitySetName": "teams",
+          "logicalName": "team"
+        },
+        "teammembership": {
+          "entitySetName": "teammemberships",
+          "logicalName": "teammembership"
+        },
+        "systemuserroles": {
+          "entitySetName": "systemuserrolescollection",
+          "logicalName": "systemuserroles"
+        },
+        "teamroles": {
+          "entitySetName": "teamrolescollection",
+          "logicalName": "teamroles"
+        },
+        "securityroles": {
+          "entitySetName": "roles",
+          "logicalName": "role"
+        },
+        "dga_aop_projects_systemuser": {
+          "entitySetName": "dga_aop_projects_systemuserset",
+          "logicalName": "dga_aop_projects_systemuser"
+        },
+        "dga_aop_projects_systemuser_1": {
+          "entitySetName": "dga_aop_projects_systemuserset",
+          "logicalName": "dga_aop_projects_systemuser"
+        },
+        "dependencies": {
+          "entitySetName": "dga_dependencies",
+          "logicalName": "dga_dependency"
+        },
+        "environment_39a902ba": {
+          "entitySetName": "Environment",
+          "logicalName": "environment_39a902ba",
+          "isHidden": false
+        },
+        "aopprojectmilestonedetails": {
+          "entitySetName": "dga_aop_project_milestone_detailses",
+          "logicalName": "dga_aop_project_milestone_details"
+        },
+        "aopengagementplans": {
+          "entitySetName": "dga_aop_engagement_plans",
+          "logicalName": "dga_aop_engagement_plan"
+        },
+        "aopcostcenters": {
+          "entitySetName": "dga_aop_cost_centers",
+          "logicalName": "dga_aop_cost_center"
+        },
+        "categories": {
+          "entitySetName": "dga_categories",
+          "logicalName": "dga_category"
+        },
+        "procurementplans": {
+          "entitySetName": "dga_procurement_plans",
+          "logicalName": "dga_procurement_plan"
+        },
+        "engagementsubtypes": {
+          "entitySetName": "dga_engagement_sub_types",
+          "logicalName": "dga_engagement_sub_type"
+        },
+        "objectives": {
+          "entitySetName": "dga_objectives",
+          "logicalName": "dga_objective"
+        },
+        "accounts": {
+          "entitySetName": "accounts",
+          "logicalName": "account"
+        },
+        "aopprojectbudgets": {
+          "entitySetName": "dga_aop_project_budgets",
+          "logicalName": "dga_aop_project_budget"
+        },
+        "aopprojectbudgetdetails": {
+          "entitySetName": "dga_aop_project_budget_detailses",
+          "logicalName": "dga_aop_project_budget_details"
+        },
+        "accountcodes": {
+          "entitySetName": "dga_account_codes",
+          "logicalName": "dga_account_code"
+        },
+        "aopaisummaries": {
+          "entitySetName": "dga_aop_ai_summaries",
+          "logicalName": "dga_aop_ai_summary",
+          "isHidden": false
+        },
+        "dga_objective_dga_objective": {
+          "entitySetName": "dga_objective_dga_objectiveset",
+          "logicalName": "dga_objective_dga_objective",
+          "isHidden": false
+        },
+        "documents": {
+          "entitySetName": "sharepointdocuments",
+          "logicalName": "sharepointdocument",
+          "isHidden": false
+        },
+        "sub_activities": {
+          "entitySetName": "dga_sub_activitieses",
+          "logicalName": "dga_sub_activities",
+          "isHidden": false
+        },
+        "aopkpis": {
+          "entitySetName": "dga_aop_kpis",
+          "logicalName": "dga_aop_kpi",
+          "isHidden": false
+        }
+      },
+      "environmentVariableName": ""
+    }
+  }
+}
